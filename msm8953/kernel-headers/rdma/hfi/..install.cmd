@@ -1,0 +1,1 @@
+cmd_avarice/include/rdma/hfi/.install := /bin/bash ../scripts/headers_install.sh avarice/include/rdma/hfi ../include/uapi/rdma/hfi hfi1_user.h; /bin/bash ../scripts/headers_install.sh avarice/include/rdma/hfi ./include/generated/uapi/rdma/hfi ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > avarice/include/rdma/hfi/$$F; done; touch avarice/include/rdma/hfi/.install

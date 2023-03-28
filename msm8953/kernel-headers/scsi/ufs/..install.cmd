@@ -1,0 +1,1 @@
+cmd_avarice/include/scsi/ufs/.install := /bin/bash ../scripts/headers_install.sh avarice/include/scsi/ufs ../include/uapi/scsi/ufs ioctl.h ufs.h; /bin/bash ../scripts/headers_install.sh avarice/include/scsi/ufs ./include/generated/uapi/scsi/ufs ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > avarice/include/scsi/ufs/$$F; done; touch avarice/include/scsi/ufs/.install

@@ -1,0 +1,1 @@
+cmd_avarice/include/misc/.install := /bin/bash ../scripts/headers_install.sh avarice/include/misc ../include/uapi/misc cxl.h; /bin/bash ../scripts/headers_install.sh avarice/include/misc ./include/generated/uapi/misc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > avarice/include/misc/$$F; done; touch avarice/include/misc/.install

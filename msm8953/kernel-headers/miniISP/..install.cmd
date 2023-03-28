@@ -1,0 +1,1 @@
+cmd_avarice/include/miniISP/.install := /bin/bash ../scripts/headers_install.sh avarice/include/miniISP ../include/uapi/miniISP miniISP_ioctl.h; /bin/bash ../scripts/headers_install.sh avarice/include/miniISP ./include/generated/uapi/miniISP ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > avarice/include/miniISP/$$F; done; touch avarice/include/miniISP/.install

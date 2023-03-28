@@ -1,0 +1,1 @@
+cmd_avarice/include/linux/spi/.install := /bin/bash ../scripts/headers_install.sh avarice/include/linux/spi ../include/uapi/linux/spi spidev.h; /bin/bash ../scripts/headers_install.sh avarice/include/linux/spi ./include/generated/uapi/linux/spi ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > avarice/include/linux/spi/$$F; done; touch avarice/include/linux/spi/.install
